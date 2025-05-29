@@ -1,0 +1,7 @@
+.DS_STORE
+.venv/
+giantbomb_api
+*.pyc
+app.db
+__pycache__/
+*.pkl

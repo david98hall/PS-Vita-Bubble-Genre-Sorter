@@ -1,0 +1,21 @@
+{
+    "Compilation": 40,
+    "Educational": 50,
+    "Action": 60,
+    "Strategy": 65,
+    "Simulation": 66,
+    "Adventure": 70,
+    "Sports": 75,
+    "Driving": 85,
+    "Fighting": 100,
+    "Shooter": 105,
+    "RPG": 106,
+    "Cards": 110,
+    "Board Game": 115,
+    "MMORPG": 125,
+    "Arcade": 130,
+    "Puzzle": 135,
+    "Music": 140,
+    "Platformer": 145,
+    "Sandbox": 150
+}
