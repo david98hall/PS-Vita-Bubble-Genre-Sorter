@@ -21,12 +21,13 @@ def reorganise_app_db(db_path: str = "app.db") -> None:
 
         # Sort the genres and the titles within each genre alphabetically
         for rows in genre_dict.values():
-            rows.sort(key=lambda r: r[icon_idx['title']])  # sort titles
+            rows.sort(key=lambda r: r[icon_idx['title']])
         sorted_genres = sorted(genre_dict)
 
         cur.execute("PRAGMA table_info(tbl_appinfo_page)")
         page_cols = [row[1] for row in cur.fetchall()]
 
+        # Get the new icon and page rows
         new_icon_rows, new_page_rows, folder_icon_page_id, folder_icon_pos = get_new_rows(genre_dict, sorted_genres, icon_idx, icon_cols, page_cols)
         
         # Re-create tables in *temp* versions identical to originals
