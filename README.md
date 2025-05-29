@@ -15,11 +15,12 @@ The thread sleeps between each genre API request because GiantBomb's API has a r
 There is also a request per hour limit. This means that the API requests might fail if you have too many games.
 
 ## How To Use
-1. Transfer your app.db file (located in the ur0:shell/db directory on your PS Vita) to your computer, next to the Python script.
-2. Create a file called giantbomb_api containing your GiantBomb API key in the same directory as the script.
-3. Run the sort_bubbles_into_genres.py script. A genre_dict.pkl file is created containing your games, sorted into genres. This is done so that you do not have to fetch from the API again if you want to run the script again.
-4. Overwrite the existing app.db file in ur0:shell/db on your PS Vita with the one on your computer.
-5. Restart your PS Vita
+1. Rebuild your PS Vita database in order to remove exising folders.
+2. Transfer your app.db file (located in the ur0:shell/db directory on your PS Vita) to your computer, next to the Python script.
+3. Create a file called giantbomb_api containing your GiantBomb API key in the same directory as the script.
+4. Run the sort_bubbles_into_genres.py script. A genre_dict.pkl file is created containing your games, sorted into genres. This is done so that you do not have to fetch from the API again if you want to run the script again.
+5. Overwrite the existing app.db file in ur0:shell/db on your PS Vita with the one on your computer.
+6. Restart your PS Vita
 
 ## After Running The Script
 When you have run the script, you will notice that the created folders have no icons. Bubbles might also be missing their icons as well and might appear white.
