@@ -6,8 +6,13 @@ The genres are retrieved from GiantBomb using their API if possible. This is don
 Since GiantBomb does not have PS Vita titleIds, this will not be perfect as the genre retrieval depends on the search of the game title being accurate.
 This means that the genre might not be accurate for some bubbles.
 
+### Choice of Database
 The reason for using GiantBomb as the genre source is that their API is free to use and that their game genres seemed good (subjectively).
 Other sources, such as Renascene, had bad genre names, no APIs (thus needed web scraping), and were unstable. Moby Games was also considered but their API is not free to use.
+
+### Limitations
+The thread sleeps between each genre API request because GiantBomb's API has a request per second limit and might temporarily block your usage otherwise.
+There is also a request per hour limit. This means that the API requests might fail if you have too many games.
 
 ## How To Use
 1. Transfer your app.db file (located in the ur0:shell/db directory on your PS Vita) to your computer, next to the Python script.
